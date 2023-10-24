@@ -1,0 +1,62 @@
+//CRUD: Create
+###
+POST http://localhost:3000/api/crearTutorial HTTP/1.1
+Content-Type: application/json
+
+{
+    "autor": "Cristian Espitia",
+    "informacion": 
+    {
+        "titulo": "Tutorial Rest API",
+        "descripcion": "Este tutorial esta siendo creado por Cristian Espitia para una prueba técnica",
+        "estadoPublicacion": true
+    }
+}
+
+###
+POST http://localhost:3000/api/crearTutorial HTTP/1.1
+Content-Type: application/json
+
+{
+    "autor": "Armando Pérez",
+    "informacion": 
+    {
+        "titulo": "Tutorial Stack MERN",
+        "descripcion": "Este tutorial enseña a usar el stack MERN (Mongo, Express, React y Node)",
+        "estadoPublicacion": true
+    }
+}
+
+//CRUD: ReadAll
+###
+GET http://localhost:3000/api/obtenerTodos HTTP/1.1
+
+//CRUD: ReadOne
+###
+GET http://localhost:3000/api/obtenerUno/65383dde8cd2327e1bcd4b00 HTTP/1.1
+
+//CRUD: Update
+###
+PUT http://localhost:3000/api/actualizarTutorial/65383dd68cd2327e1bcd4afd HTTP/1.1
+Content-Type: application/json
+
+{
+    "informacion":
+    {
+        "titulo": "Tutorial API-REST",
+        "descripcion": "Este tutorial esta siendo creado por Cristian Espitia para una prueba técnica.",
+        "estadoPublicacion": false
+    }
+}
+
+###
+PUT http://localhost:3000/api/actualizarTutorial/65383dde8cd2327e1bcd4b00 HTTP/1.1
+Content-Type: application/json
+
+{
+    "autor": "Carlos Castiblanco"
+}
+
+//CRUD: Delete
+###
+DELETE http://localhost:3000/api/eliminarTutorial/65380da021ed5a80d71b768e HTTP/1.1
