@@ -19,6 +19,4 @@ La URI de MongoDB se encontraba en un archivo .env (Variables de entorno), el cu
 
 Si quieres ver el funcionamiento del programa, en la carpeta Evidencias, encuentras un video donde se muestra todas las requests CRUD y que todo esta corriendo correctamente.
 
-Esto se terminó antes de las 5:15 PM del día 24 de Octubre del 2023 (en el video esta la evidencia de la API REST corriendo antes de esa hora), no obstante, tenía desconfigurado mi Git y tarde 12 minutos más, es por eso que la hora de subida quedó a las 5:27. Espero me disculpen... en verdad necesito el trabajo :(
-
 
